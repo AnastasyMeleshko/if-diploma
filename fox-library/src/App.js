@@ -1,18 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "./components/initialPage/header";
 
-const AppWrapper = styled.div`
+const StyledApp = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding: 2rem; 
+  padding: 30px 105px;
+  margin: 0 auto;
   color: black;
 `;
 
 function App() {
     return (
-        <AppWrapper>
-            <button>Click me!</button>
-        </AppWrapper>
+        <StyledApp>
+            <Header/>
+        </StyledApp>
     );
 }
 

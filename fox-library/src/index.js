@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import {createRoot} from "react-dom/client";
 import App from "./App";
 import {createGlobalStyle} from "styled-components";
 import openSans400Woff from "./assets/fonts/open-sans-v29-latin_cyrillic-400.woff";
@@ -8,6 +8,9 @@ import openSans600Woff from "./assets/fonts/open-sans-v29-latin_cyrillic-600.wof
 import openSans600Woff2 from "./assets/fonts/open-sans-v29-latin_cyrillic-600.woff2";
 import openSans700Woff from "./assets/fonts/open-sans-v29-latin_cyrillic-700.woff";
 import openSans700Woff2 from "./assets/fonts/open-sans-v29-latin_cyrillic-700.woff2";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
 
 const Global = createGlobalStyle`
   * {
@@ -45,7 +48,6 @@ const Global = createGlobalStyle`
 `;
 export default Global;
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
         <Global/>
