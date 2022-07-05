@@ -9,23 +9,23 @@ const StyledSearchInput = styled.div`
   display: flex;
   align-items: center;
 
-  form {
+  & form {
     width: 92%;
   }
 
-  input {
+  & input {
     width: 100%;
     outline: none;
     border: none;
   }
 
-  input::placeholder {
+  & input::placeholder {
     color: #B5B5B5;
     font-size: 16px;
     line-height: 1.375;
   }
   
-  svg {
+  & svg {
     fill: #B5B5B5;
     margin-right: 16px;
   }`;

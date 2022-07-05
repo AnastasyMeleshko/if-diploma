@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledHeaderBtns = styled.div`
+const StyledHeaderBtns = styled.ul`
   display: flex;
   list-style-type: none;
   

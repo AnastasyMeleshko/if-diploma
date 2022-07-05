@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./components/initialPage/header";
+import InitialPage from "./components/initialPage/initialPage";
 
 const StyledApp = styled.div`
   width: 100%;
@@ -8,12 +8,13 @@ const StyledApp = styled.div`
   padding: 30px 105px;
   margin: 0 auto;
   color: black;
+  background-color: #FFFFFF;
 `;
 
 function App() {
     return (
         <StyledApp>
-            <Header/>
+            <InitialPage/>
         </StyledApp>
     );
 }
