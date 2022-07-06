@@ -36,7 +36,8 @@ module.exports = {
         "space-in-parens": "warn",
         "no-multiple-empty-lines": "warn",
         "prefer-const": "warn",
-        "no-use-before-define": "error"
+        "no-use-before-define": "error",
+        "react/prop-types": "off"
     },
     settings: {
         react: {

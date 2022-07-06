@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import RedButton from "../common/RedButton";
 
 const StyledMainContent = styled.main`
   margin-top: 64px;
@@ -30,16 +31,7 @@ const StyledMainText = styled.div`
   }
   
   & .start-button {
-    background-color: #FF5D4F;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.36;
-    padding: 11px 45px;
     max-width: 185px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
   }
 `;
 
@@ -49,7 +41,7 @@ function MainContent() {
             <StyledMainText>
                 <h1 className="main-headline">Bild your library</h1>
                 <p className="main-text">Over 400.000 books from fiction to the business literature</p>
-                <button className="start-button">Let’s start</button>
+                <RedButton className="start-button" buttonText="Let’s start" type="button"/>
             </StyledMainText>
             <div className="main-image">
                 <svg width="668" height="358" viewBox="0 0 668 358" fill="none" xmlns="http://www.w3.org/2000/svg">
